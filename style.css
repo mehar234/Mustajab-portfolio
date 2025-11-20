@@ -1,9 +1,9 @@
 :root {
-    --page-dark-bg: #22202E; 
+    --page-dark-bg: #22202E;
     --main-text-color: #F0F0F0;
-    --secondary-text-color: #CCCCCC; 
-    --primary-accent-color: #FFC72C; 
-    --card-background: #353245; 
+    --secondary-text-color: #CCCCCC;
+    --primary-accent-color: #FFC72C;
+    --card-background: #353245;
 }
 
 * {
@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     background-color: var(--page-dark-bg);
     color: var(--main-text-color);
     margin: 0;
@@ -29,6 +29,7 @@ a {
     color: var(--main-text-color);
     text-decoration: none;
 }
+
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -63,13 +64,15 @@ a {
         display: none;
     }
 }
+
 .intro-area {
+    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: space-between;
     align-items: center;
-    padding: 80px 0;
-    gap: 40px;
+    gap: 200px;
+
+
 }
 
 .intro-content-left {
@@ -103,24 +106,31 @@ a {
     margin: 5px auto 20px auto;
 }
 
+
+
 .profile-visuals-right {
-    flex: 1;
-    min-width: 250px;
+    
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    justify-content: flex-end;
+   
 }
 
+
+
+    
+
 .image-frame-circle {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, rgba(53,50,69,0.8) 0%, rgba(34,32,46,0.2) 70%);
+    margin-right: 10px;
+    
+    
+    background: radial-gradient(circle, rgba(53, 50, 69, 0.8) 0%, rgba(34, 32, 46, 0.2) 70%);
 }
 
 .image-frame-circle img {
@@ -128,14 +138,16 @@ a {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    
+
 }
 
 .service-summary-card {
-    background-color: var(--card-background);
+    /* background-color: var(--card-background); */
     padding: 20px;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     text-align: center;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    /* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); */
     width: 100%;
     max-width: 300px;
 }
@@ -161,6 +173,7 @@ a {
     width: 20px;
     height: 20px;
 }
+
 .partner-logos-strip {
     background-color: var(--card-background);
     padding: 30px 0;
@@ -187,6 +200,7 @@ a {
 .logo-item-box:hover {
     color: var(--main-text-color);
 }
+
 .skillset-capabilities {
     padding: 80px 0 50px 0;
     display: flex;
@@ -229,6 +243,7 @@ a {
     font-size: 0.8em;
     color: var(--secondary-text-color);
 }
+
 .service-item-card {
     background-color: var(--card-background);
     padding: 20px;
@@ -258,6 +273,7 @@ a {
     font-size: 1.5em;
     color: var(--primary-accent-color);
 }
+
 .site-foot {
     text-align: center;
     padding: 30px 0;
@@ -266,31 +282,40 @@ a {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 50px;
 }
+
 @media (max-width: 900px) {
     .intro-area {
         flex-direction: column;
         padding-bottom: 40px;
     }
-    .intro-content-left, .profile-visuals-right {
+
+    .intro-content-left,
+    .profile-visuals-right {
         width: 100%;
         text-align: center;
     }
+
     .image-frame-circle {
         width: 200px;
         height: 200px;
     }
+
     .service-summary-card {
         max-width: 90%;
     }
 }
 
 @media (max-width: 768px) {
-    .capabilities-text-area, .service-listings-container {
+
+    .capabilities-text-area,
+    .service-listings-container {
         min-width: 100%;
     }
+
     .capabilities-text-area {
         text-align: center;
     }
+
     .achievement-stats {
         justify-content: space-around;
     }
